@@ -53,7 +53,7 @@ h3 {
 /* header */
 
 #masthead {
-  position: fixed;
+  position: static;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -94,7 +94,9 @@ nav a {
 
 nav a:first-child {
   border-left: 0 none;
+ 
 }
+
 
 /* footer */
 
@@ -176,10 +178,12 @@ h3, h2 {
   margin-right: 25px;
 }
 
+
 /* contact page */
 
 #contact-form ul {
   margin-bottom: 20px;
+  list-style: none;
 }
 
 #contact-form li {
@@ -215,3 +219,63 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+
+/* Media Queries */
+
+@media screen and (max-width: 980px){
+  .main-section {
+
+  }
+}
+@media screen and (max-width: 768px){
+ 
+  #masthead {
+    position: static;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+  }
+  nav {
+    margin-right: 20px;
+
+  }
+
+  #logo {
+   margin-left: 0;
+
+  }
+
+  #main-container {
+    width: 80%;
+  }
+  @media screen and (max-width: 640px){
+    #masthead {
+      position: static;
+      z-index: 99;
+      width: 100%;
+      margin: 0 0 30px;
+      overflow: auto;
+    }
+  
+    /* Check this with TA fine at 640, but not smaller not centered*/
+    nav {
+      width: 100%;
+      padding-left: 11.5rem;
+      margin-right: 20px;
+  
+    }
+  
+    #logo{
+      width: 100%;
+      margin: 0;
+    }
+
+    .auth-image{
+      float: none;
+      width: 100%;
+    }
+  }
+
+ 
