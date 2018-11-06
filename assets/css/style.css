@@ -8,6 +8,7 @@ body {
 
 * {
   box-sizing: border-box;
+  
 }
 
 /* general */
@@ -61,11 +62,14 @@ h3 {
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
+  display: flex;
+  align-items: baseline;
+
 }
 
 #logo {
   float: left;
-  width: 250px;
+  width: auto;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -75,11 +79,17 @@ h3 {
   text-align: center;
   text-decoration: none;
   background: #4aaaa5;
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 nav {
-  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
   margin-top: 25px;
+  
 }
 
 nav a {
@@ -218,6 +228,7 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+ 
 }
 
 
@@ -250,6 +261,7 @@ input[type=submit] {
   #main-container {
     width: 80%;
   }
+}
   @media screen and (max-width: 640px){
     #masthead {
       position: static;
@@ -262,8 +274,9 @@ input[type=submit] {
     /* Check this with TA fine at 640, but not smaller not centered*/
     nav {
       width: 100%;
-      padding-left: 11.5rem;
-      margin-right: 20px;
+      /* padding-left: 11.5rem;
+      margin-right: 20px; */
+      justify-content: center;
   
     }
   
